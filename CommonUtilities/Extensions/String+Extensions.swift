@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  String+Extensions.swift
 //  
 //
 //  Created by João Vitor Duarte Mariucio on 21/07/21.
