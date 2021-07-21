@@ -1,6 +1,0 @@
-framework module CommonUtilities {
-  umbrella header "CommonUtilities-umbrella.h"
-
-  export *
-  module * { export * }
-}

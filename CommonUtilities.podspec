@@ -8,35 +8,23 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CommonUtilities'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of CommonUtilities.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-  s.source = 'joaoduartemariucio'
   s.homepage         = 'https://github.com/joaoduartemariucio/CommonUtilities'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'João Vitor Duarte mariucio' => 'joaovitorduartemariucio@gmail.com' }
   s.source           = { :git => 'https://github.com/joaoduartemariucio/CommonUtilities.git', :tag => s.version.to_s }
-
-  s.ios.deployment_target = '12.1'
-  s.swift_version = '5.3'
-  s.requires_arc = true
-
-  s.source_files = 'CommonUtilities/Classes/**/*'
+  s.swift_version    = '5.0'
   
-  # s.resource_bundles = {
-  #   'CommonUtilities' => ['CommonUtilities/Assets/*.png']
-  # }
+  s.ios.deployment_target = '10.0'
   
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.default_subspecs = ['Classes']
+  
+  s.subspec 'Classes' do |sp|
+    sp.source_files = ['CommonUtilities/Classes/**/*']
+  end
+  
 end

@@ -13,6 +13,7 @@ public class DecoderHelper {
 
     public func decode<T: Codable>(data: Data)-> T? {
         let decoder = JSONDecoder()
+        
         do {
             return try decoder.decode(T.self, from: data)
         } catch let error {
