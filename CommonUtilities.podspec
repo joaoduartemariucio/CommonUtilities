@@ -20,22 +20,22 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-
+  s.source = 'joaoduartemariucio'
   s.homepage         = 'https://github.com/joaoduartemariucio/CommonUtilities'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'João Vitor Duarte mariucio' => 'joaovitorduartemariucio@gmail.com' }
   s.source           = { :git => 'https://github.com/joaoduartemariucio/CommonUtilities.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '12.1'
+  s.swift_version = '5.3'
+  s.requires_arc = true
 
   s.source_files = 'CommonUtilities/Classes/**/*'
   
   # s.resource_bundles = {
   #   'CommonUtilities' => ['CommonUtilities/Assets/*.png']
   # }
-
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
