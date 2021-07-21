@@ -21,10 +21,14 @@ TODO: Add long description of the pod here.
   
   s.ios.deployment_target = '10.0'
   
-  s.default_subspecs = ['Classes']
+  s.default_subspecs = ['Classes', 'Extensions']
   
   s.subspec 'Classes' do |sp|
     sp.source_files = ['CommonUtilities/Classes/**/*']
+  end
+    
+  s.subspec 'Extensions' do |sp|
+    sp.source_files = ['CommonUtilities/Extensions/**/*']
   end
   
 end
