@@ -4,18 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "UltilHelpers",
+    name: "CommonUtilities",
     products: [
         .library(
-            name: "UltilHelpers",
-            targets: ["UltilHelpers"]
+            name: "CommonUtilities",
+            targets: ["CommonUtilities"]
         )
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "UltilHelpers",
-            dependencies: []
+            name: "CommonUtilities",
+            dependencies: [],
+            path: "CommonUtilities"
         )
     ]
 )
