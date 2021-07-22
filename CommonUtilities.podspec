@@ -35,6 +35,6 @@ TODO: Add long description of the pod here.
     sp.source_files = ['CommonUtilities/Utils/**/*']
   end
   
-  s.dependency 'Nuke'
+  s.dependency 'Nuke', '9.5.0'
   
 end
