@@ -10,7 +10,7 @@ import Nuke
 
 extension UIImageView {
     
-    func load(with url: String,
+    func load(with urlString: String,
               placeholder: UIImage? = nil,
               failureImage: UIImage? = nil,
               transition: ImageLoadingOptions.Transition? = nil,
@@ -24,6 +24,8 @@ extension UIImageView {
             failureImageTransition: transition,
             contentModes: contentMode,
             tintColors: tintColors)
+        
+        guard let url = URL(string: urlString) else { return }
         
         Nuke.loadImage(with: url, options: options, into: self)
     }
