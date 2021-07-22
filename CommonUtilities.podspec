@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CommonUtilities'
-  s.version          = '1.2.1'
+  s.version          = '1.3.0'
   s.summary          = 'A short description of CommonUtilities.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -19,7 +19,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/joaoduartemariucio/CommonUtilities.git', :tag => s.version.to_s }
   s.swift_version    = '5.0'
   
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
   
   s.default_subspecs = ['Classes', 'Extensions', 'Utils']
   
@@ -34,5 +34,7 @@ TODO: Add long description of the pod here.
   s.subspec 'Utils' do |sp|
     sp.source_files = ['CommonUtilities/Utils/**/*']
   end
+  
+  s.dependency 'Nuke'
   
 end
