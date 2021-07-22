@@ -8,7 +8,7 @@
 import UIKit
 import Nuke
 
-extension UIImageView {
+public extension UIImageView {
     
     func load(with urlString: String,
               placeholder: UIImage? = nil,
