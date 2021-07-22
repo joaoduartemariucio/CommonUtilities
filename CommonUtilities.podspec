@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CommonUtilities'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'A short description of CommonUtilities.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -21,7 +21,7 @@ TODO: Add long description of the pod here.
   
   s.ios.deployment_target = '10.0'
   
-  s.default_subspecs = ['Classes', 'Extensions']
+  s.default_subspecs = ['Classes', 'Extensions', 'Utils']
   
   s.subspec 'Classes' do |sp|
     sp.source_files = ['CommonUtilities/Classes/**/*']
