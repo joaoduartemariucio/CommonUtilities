@@ -29,12 +29,11 @@ TODO: Add long description of the pod here.
     
   s.subspec 'Extensions' do |sp|
     sp.source_files = ['CommonUtilities/Extensions/**/*']
+    sp.dependency 'Nuke', '~> 9.5'
   end
     
   s.subspec 'Utils' do |sp|
     sp.source_files = ['CommonUtilities/Utils/**/*']
   end
-  
-  s.dependency 'Nuke', '~> 9.5'
   
 end
