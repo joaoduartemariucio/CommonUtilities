@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CommonUtilities'
-  s.version          = '1.3.1'
+  s.version          = '1.3.2'
   s.summary          = 'A short description of CommonUtilities.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -29,12 +29,11 @@ TODO: Add long description of the pod here.
     
   s.subspec 'Extensions' do |sp|
     sp.source_files = ['CommonUtilities/Extensions/**/*']
+    sp.dependency 'Nuke', '9.5.0'
   end
     
   s.subspec 'Utils' do |sp|
     sp.source_files = ['CommonUtilities/Utils/**/*']
   end
-  
-  s.dependency 'Nuke', '9.5.0'
   
 end
